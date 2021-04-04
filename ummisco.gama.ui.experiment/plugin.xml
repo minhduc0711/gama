@@ -235,6 +235,24 @@
                </reference>
             </visibleWhen>
          </menu>
+         <menu id="tutorialMenu"
+               label="Tutorial">
+            <command
+                  commandId="msi.gama.application.commands.CreateTutorial"
+                  label="Create an agent of species teacher"
+                  style="push">
+            </command>
+            <dynamic
+                  class="ummisco.gama.ui.menus.AgentsMenu"
+                  id="msi.gama.application.tutorial">
+            </dynamic>
+            <visibleWhen
+                  checkEnabled="false">
+               <reference
+                     definitionId="isSimulationReady">
+               </reference>
+            </visibleWhen>
+         </menu>
          <menu
                id="viewMenu"
                label="Views">
@@ -658,6 +676,15 @@
       <handler
             class="ummisco.gama.ui.commands.ReloadSimulationHandler"
             commandId="msi.gama.application.commands.ReloadSimulation">
+         <activeWhen>
+            <reference
+                  definitionId="isSimulationReady">
+            </reference>
+         </activeWhen>
+      </handler>
+      <handler
+            class="ummisco.gama.ui.commands.CreateTutorialAgentHandler"
+            commandId="msi.gama.application.commands.CreateTutorial">
          <activeWhen>
             <reference
                   definitionId="isSimulationReady">
