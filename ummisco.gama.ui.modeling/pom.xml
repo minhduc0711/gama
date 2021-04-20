@@ -12,28 +12,28 @@
   <packaging>eclipse-plugin</packaging>
   <groupId>msi.gama</groupId>
 
-  <dependencies>
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.lsp4j</groupId>
-      <artifactId>org.eclipse.lsp4j</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ow2.asm</groupId>
-      <artifactId>asm</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ow2.asm</groupId>
-      <artifactId>asm-commons</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ow2.asm</groupId>
-      <artifactId>asm-tree</artifactId>
-    </dependency>
-  </dependencies>
+  <!-- <dependencies> -->
+  <!--   <dependency> -->
+  <!--     <groupId>log4j</groupId> -->
+  <!--     <artifactId>log4j</artifactId> -->
+  <!--   </dependency> -->
+  <!--   <dependency> -->
+  <!--     <groupId>org.eclipse.lsp4j</groupId> -->
+  <!--     <artifactId>org.eclipse.lsp4j</artifactId> -->
+  <!--   </dependency> -->
+  <!--   <dependency> -->
+  <!--     <groupId>org.ow2.asm</groupId> -->
+  <!--     <artifactId>asm</artifactId> -->
+  <!--   </dependency> -->
+  <!--   <dependency> -->
+  <!--     <groupId>org.ow2.asm</groupId> -->
+  <!--     <artifactId>asm-commons</artifactId> -->
+  <!--   </dependency> -->
+  <!--   <dependency> -->
+  <!--     <groupId>org.ow2.asm</groupId> -->
+  <!--     <artifactId>asm-tree</artifactId> -->
+  <!--   </dependency> -->
+  <!-- </dependencies> -->
   <build>
     <plugins>
       <plugin>

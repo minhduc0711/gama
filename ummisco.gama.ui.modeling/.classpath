@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="msi/gama/lang/gaml/ui/GamlValidationEditorCallback.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="src-gen"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins">
 		<accessrules>
 			<accessrule kind="accessible" pattern="org/e*/**"/>
 		</accessrules>
 	</classpathentry>
-	<classpathentry excluding="msi/gama/lang/gaml/ui/GamlValidationEditorCallback.java" kind="src" path="src"/>
-	<classpathentry kind="src" path="src-gen"/>
+	<classpathentry kind="lib" path="/home/minhduc0711/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="/home/minhduc0711/.m2/repository/org/eclipse/lsp4j/org.eclipse.lsp4j.jsonrpc/0.10.0/org.eclipse.lsp4j.jsonrpc-0.10.0.jar"/>
+	<classpathentry kind="lib" path="/home/minhduc0711/.m2/repository/org/eclipse/lsp4j/org.eclipse.lsp4j/0.10.0/org.eclipse.lsp4j-0.10.0.jar"/>
+	<classpathentry kind="lib" path="/home/minhduc0711/.m2/repository/p2/osgi/bundle/io.github.classgraph/4.8.35.v20190528-1517/io.github.classgraph-4.8.35.v20190528-1517.jar"/>
+	<classpathentry kind="lib" path="/home/minhduc0711/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

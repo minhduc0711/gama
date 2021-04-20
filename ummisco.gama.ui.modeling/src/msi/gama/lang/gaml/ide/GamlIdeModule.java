@@ -28,12 +28,12 @@ public class GamlIdeModule extends AbstractGamlIdeModule {
 	/**
 	 * @see org.eclipse.xtext.service.AbstractGenericModule#configure(com.google.inject.Binder)
 	 */
-	@Override
-	public void configure(final Binder binder) {
-		super.configure(binder);
-		configureContentAssistLexer(binder);
-		binder.bind(IContentAssistParser.class).to(GamlParser.class);
-		binder.bind(IProposalConflictHelper.class).to(AntlrProposalConflictHelper.class);
-		binder.bind(IPrefixMatcher.class).to(IPrefixMatcher.IgnoreCase.class);
-	}
+//	@Override
+//	public void configure(final Binder binder) {
+//		super.configure(binder);
+//		configureContentAssistLexer(binder);
+//		binder.bind(IContentAssistParser.class).to(GamlParser.class);
+//		binder.bind(IProposalConflictHelper.class).to(AntlrProposalConflictHelper.class);
+//		binder.bind(IPrefixMatcher.class).to(IPrefixMatcher.IgnoreCase.class);
+//	}
 }
